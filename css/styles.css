@@ -38,14 +38,17 @@
     background-color: var(--main-title-color);
     color: var(--text-color-link);
     }
+    img {
+    display: block;
+    margin-bottom: 32px;
+    }
 
     .container{
-        width: 100%;
-        max-width:1158;
-        /*1128+15*2*/
+        width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0;
+        padding-top: 24px;
+        margin: 0 auto;
     }
 
     .link{
@@ -148,7 +151,10 @@
         background-color:   var(--color-for-text-icon);
     }
     /*------------------SECTION 2----------------*/
-    .section2 {}
+    .section2 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
     .visually-hidden{
         position: absolute;
@@ -175,6 +181,7 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--text-color-link);
+        margin-bottom: 8px;
     }
 
     .section2-tille {
@@ -184,7 +191,10 @@
         color: var(--text-over);
     }
      /*------------------SECTION 3----------------*/
-    .section3 {}
+    .section3 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
     .section3-caption {
         font-weight: 700;
@@ -194,6 +204,7 @@
         letter-spacing: 0.02em;
         text-transform: capitalize;    
         color: var(--text-color-link);
+        margin-bottom: 72px;
     }
 
     .section3-list {}
@@ -207,6 +218,8 @@
      /*------------------SECTION 4----------------*/
     .section4 {
         background: var(--section-fone-our-team);
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .section4-title {
@@ -217,6 +230,7 @@
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--text-color-link);
+        margin-bottom: 72px;
     }
     .section4-list {}
 
@@ -267,6 +281,8 @@
 
         /*------------------Portfolio---------------*/
         .portfolio-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
         }
     
         .visually-hidden {}
