@@ -62,8 +62,15 @@
     .header {
         outline: 1px solid #E7E9FC;
     }
+    .header-container{
+        display: flex;
+        align-items: center;
+    }
 
-    .header-navigation {}
+    .header-navigation {
+        display: flex;
+        margin-right: auto;
+    }
 
     .header-logo {
         font-family: 'Raleway', sans-serif;
@@ -73,15 +80,23 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--text-color-link);
+        margin-right: 76px;
     }
 
     .blue-word{
         color: var(--logo-blue-color);
     }
 
-    .header-list {}
+    .header-list {
+        display: flex;
+        gap: 40px;
 
-    .header-iten {}
+    }
+    .header-addres{
+        display: flex;
+    }
+    .header-iten {
+    }
 
     .header-link {
         font-weight: 500;
@@ -102,6 +117,7 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-over);
+        margin-right: 40px;
         }
         .header-amail:hover ,
         .header-amail:focus
@@ -123,27 +139,32 @@
 /*------------------SECTION 1----------------*/
     .section1-fone {
         background: var(--main-section-fone);
+        margin-bottom: 120px;
     }
 
 /*Effective Solutions for Your Business*/
     .section1-heading{
+        width: 496px;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--main-color-text);
-    }
+        border-color: var(--main-section-fone);
+        margin:188px 473px 64px;
+        }
 
     .section1-btn{
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5; 
-        align-items: center;
         letter-spacing: 0.04em;
         color: var(--main-color-text);
         background-color: var(--main-color-fone-btm);
+        margin-left: 633px;
+        margin-bottom: 188px;
          }
     .section1-btn:hover,
     .section1-btn:focus 
@@ -154,7 +175,7 @@
     .section2 {
         padding-top: 120px;
         padding-bottom: 120px;
-    }
+     }
 
     .visually-hidden{
         position: absolute;
@@ -170,9 +191,11 @@
     }
 
     .section2-list {
+        display: flex;
     }
 
     .section2-item{
+        
     }
 
     .section2-items {
@@ -189,6 +212,7 @@
         line-height: 1.5;
         letter-spacing: 0.02em;    
         color: var(--text-over);
+        margin-right: 24px;
     }
      /*------------------SECTION 3----------------*/
     .section3 {
@@ -207,7 +231,10 @@
         margin-bottom: 72px;
     }
 
-    .section3-list {}
+    .section3-list {
+        display: flex;
+        gap: 24px;
+    }
 
     .section3-item {}
 
@@ -232,13 +259,17 @@
         color: var(--text-color-link);
         margin-bottom: 72px;
     }
-    .section4-list {}
+    .section4-list {
+        display: flex;
+        gap: 24px;
+    }
 
     .section4-item {}
 
     .section4-img {
         width: 264px;
         height: 260px;
+        margin-bottom: 32px;
     }
     .section4-items {
         font-weight: 500;
@@ -247,6 +278,7 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--text-color-link);
+        margin-bottom: 8px;
     }
     .section4-desc {
         font-size: 16px;
@@ -259,24 +291,32 @@
     .footer-fone {
             background: var(--main-section-fone);
          }
-
+         .footer-title{
+            display: flex;
+            min-width: 264px;
+            padding-left: 100px;
+         }
      .footer-logo {
         font-family: 'Raleway',sans-serif;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
+        text-decoration: none;
         text-transform: uppercase;
         color: var(--text-color-footer);
+        margin-bottom: 16px;
     }
     .footer-blue-word {
         color: var(--logo-blue-color);
     }
     .footer-text {
+        max-width: 264px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-footer);
+        
     }
 
         /*------------------Portfolio---------------*/
@@ -287,9 +327,15 @@
     
         .visually-hidden {}
     
-        .portfolio-section-btm {}
+        .portfolio-section-btm {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
     
-        .portfolio-list-btms {}
+        .portfolio-list-btms {
+            margin-bottom: 72px;
+        }
 
         .main-btm-portfolio {
             font-family: 'Roboto';
@@ -319,13 +365,21 @@
             background-color: var(--color-for-text-icon);
         }
 
+        .portfolio-list-link{
+            display: flex;
+        }
 
+        .portfolio-item-wrap{
+        display: flex;
+        gap: 24px;
+        }
 
         .portfolio-item {
+            margin-bottom: 48px;
         }
         
         .portfolio-img {
-
+        margin-bottom: 32px;
         }
         
         .portfolio-items {
@@ -333,6 +387,7 @@
         font-size: 20px;
         line-height: 1.2;        
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
         }
         
         .portfolio-desc {
