@@ -139,12 +139,10 @@
 /*------------------SECTION 1----------------*/
     .section1-fone {
         background: var(--main-section-fone);
-        margin-bottom: 120px;
     }
 
 /*Effective Solutions for Your Business*/
     .section1-heading{
-        height: 600px;
         width: 496px;
         font-weight: 700;
         font-size: 56px;
@@ -153,7 +151,10 @@
         letter-spacing: 0.02em;
         color: var(--main-color-text);
         border-color: var(--main-section-fone);
-        padding: 188px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 188px;
+        padding-bottom: 48px;
         }
 
     .section1-btn{
@@ -164,9 +165,12 @@
         letter-spacing: 0.04em;
         color: var(--main-color-text);
         background-color: var(--main-color-fone-btm);
-        margin-left: 633px;
+        margin-left: 635px;
+        margin-right: 636px;
         margin-bottom: 188px;
-         }
+        margin-top: 48px;
+
+    }
     .section1-btn:hover,
     .section1-btn:focus 
     {
@@ -368,17 +372,25 @@
 
         .portfolio-list-link{
             display: flex;
+            padding-bottom: 120px;
+            margin-left: -24px;
         }
 
-        .portfolio-item-wrap{
-        display: flex;
-        gap: 24px;
-        padding-top: 48px;
+        .portfolio-section-list{
+            text-decoration: none;
+            background-color: var(--main-title-color);
+        }
 
+        .portfolio-item-mix{
+        border: 1px solid #E7E9FC;
+        padding: 32px 0 32px 16px;
+        
         }
 
         .portfolio-item {
-            margin-bottom: 48px;
+            flex-basis: calc((100S%-24px)/3);
+            margin-left: 24px;
+           padding-bottom: 48px;
         }
         
         .portfolio-img {
@@ -391,6 +403,7 @@
         line-height: 1.2;        
         letter-spacing: 0.02em;
         margin-bottom: 8px;
+        color: var(--text-color-link);
         }
         
         .portfolio-desc {
