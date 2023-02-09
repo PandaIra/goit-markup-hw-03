@@ -14,6 +14,7 @@
     --portfolio-another-btm-text: #4D5AE5;
     --portfolio-another-btm-fone: #F4F4FD;
     --portfolio-section-fone: #E5E5E5;
+    --header-line: #E7E9FC;
 }
     h1,
     h2,
@@ -47,7 +48,6 @@
         width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 24px;
         margin: 0 auto;
     }
 
@@ -60,7 +60,9 @@
 
 /*------------------HEADER----------------*/
     .header {
-        outline: 1px solid #E7E9FC;
+        border: 1px solid var(--header-line);
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     .header-container{
         display: flex;
@@ -81,6 +83,7 @@
         text-transform: uppercase;
         color: var(--text-color-link);
         margin-right: 76px;
+        padding: 24px 0;
     }
 
     .blue-word{
