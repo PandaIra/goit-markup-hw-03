@@ -221,7 +221,7 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--text-color-link);
-        margin-bottom: 8px;
+        
 
     }
 
@@ -231,7 +231,8 @@
         line-height: 1.5;
         letter-spacing: 0.02em;    
         color: var(--text-over);
-       
+        margin-top: 8px;
+        margin-bottom: 0;
     }
      /*------------------SECTION 3----------------*/
     .section3 {
@@ -265,6 +266,7 @@
         background: var(--section-fone-our-team);
         padding-top: 120px;
         padding-bottom: 120px;
+        
     }
 
     .section4-title {
@@ -282,12 +284,16 @@
         gap: 24px;
     }
 
-    .section4-item {}
+    .section4-item {
+        flex-basis: calc((100%-24px)/4);
+        background-color: var(--main-title-color);
+        border: var(--main-section-fone);
+        border-radius: 8px;
+   
+    }
 
     .section4-img {
-        width: 264px;
-        height: 260px;
-        margin-bottom: 32px;
+
     }
     .section4-items {
         font-weight: 500;
@@ -296,19 +302,26 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--text-color-link);
-        margin-bottom: 8px;
+
     }
+        .section4-item-mix{
+        padding: 32px 0;
+
+        }
     .section4-desc {
-        font-size: 16px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--text-over);
+        margin-top: 8px;
+        margin-bottom: 0;
     }
     /*------------------FOOTER---------------*/
     .footer-fone {
             background: var(--main-section-fone);
-         }
+            padding: 100px 0px;
+
+        }
          .footer-title{
             display: flex;
             min-width: 264px;
@@ -334,25 +347,29 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-footer);
+        margin-bottom: 0;
         
     }
 
         /*------------------Portfolio---------------*/
         .portfolio-section {
-            padding-top: 120px;
             padding-bottom: 120px;
         }
     
-        .visually-hidden {}
+        .visually-hidden {
+       
+        }
     
         .portfolio-section-btm {
             display: flex;
             justify-content: center;
             gap: 24px;
+            margin-bottom: 72px;
+            margin-top: 96px;
         }
     
         .portfolio-list-btms {
-            margin-bottom: 72px;
+            
         }
 
         .main-btm-portfolio {
@@ -361,9 +378,11 @@
             font-size: 16px;
             line-height: 1.5;
             text-align: center;
+            cursor: pointer;
             letter-spacing: 0.04em;
             color: var(--main-color-text);
             background : var(--color-for-btm-fone);
+            padding: 12px 24px 12px 24px;
             }
     
         .another-btm-portfolio {
@@ -372,10 +391,11 @@
             font-size: 16px;
             line-height: 1.5;
             text-align: center;
+            cursor: pointer;
             letter-spacing: 0.04em;
             color: var(--portfolio-another-btm-text);
             background: var(--portfolio-another-btm-fone);
-        }
+            padding: 12px 24px 12px 24px;        }
 
         .another-btm-portfolio:hover,
         .another-btm-portfolio:focus {
@@ -385,29 +405,36 @@
 
         .portfolio-list-link{
             display: flex;
-            padding-bottom: 120px;
-            margin-left: -24px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-wrap: wrap;
+
+            margin-bottom: -48px;
+            margin-right: -24px;
+            margin-left: -16px;
+            
         }
 
         .portfolio-section-list{
             text-decoration: none;
             background-color: var(--main-title-color);
+            
         }
 
         .portfolio-item-mix{
-        border: 1px solid #E7E9FC;
-        padding: 32px 0 32px 16px;
-        
+
         }
 
         .portfolio-item {
-            flex-basis: calc((100S%-24px)/3);
-            margin-left: 24px;
-           padding-bottom: 48px;
+            flex-basis: calc(100%/3-24px);
+            margin-bottom: 48px;
+            margin-right: 24px;
+            border: 1px solid var(--header-line);
         }
         
         .portfolio-img {
-        margin-bottom: 32px;
+        padding-bottom: 32px;
         }
         
         .portfolio-items {
@@ -416,6 +443,7 @@
         line-height: 1.2;        
         letter-spacing: 0.02em;
         margin-bottom: 8px;
+        margin-left: 16px;
         color: var(--text-color-link);
         }
         
@@ -424,4 +452,7 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-over);
+        margin: 0;
+        margin-left: 16px;
+        margin-bottom: 32px;
         }
